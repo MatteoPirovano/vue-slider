@@ -6,14 +6,13 @@
 #root {
   display: flex;
   height: 100vh;
-  background: yellow;
+  background: lightgray;
 }
 
 #container {
   height: 500px;
   width: 800px;
   margin: auto;
-  background-color: orange;
   display: flex;
 }
 .back_image, .next_image {
@@ -27,4 +26,10 @@
 }
 .image_box {
   width: calc(100% - 140px);
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
