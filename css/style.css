@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  display: flex;
+  height: 100vh;
+  background: yellow;
+}
+
+#container {
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  background-color: orange;
+  display: flex;
+}
+.back_image, .next_image {
+  height: 100%;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: gray;
+}
+.image_box {
+  width: calc(100% - 140px);
+}
