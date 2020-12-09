@@ -17,6 +17,9 @@
     </div>
     <div class="image_box">
       <img :src="img[counter]" alt="Razza lupi">
+      <div class="circle">
+        <i v-for="(images, index) in img" :class="(index == counter) ? 'fas' : 'far'" class="fa-circle"></i>
+      </div>
     </div>
     <div class="next_image">
       <i class="fas fa-chevron-right" @click="nextImg"></i>
