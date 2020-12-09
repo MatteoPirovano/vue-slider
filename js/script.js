@@ -14,13 +14,12 @@ var slider = new Vue(
     methods: {
       nextImg : function () {
         this.counter++
-        if (this.counter == this.img.length){
-          this.counter = 0
-        }
+        if (this.counter == this.img.length) this.counter = 0
       },
         preImg : function () {
-
-          }
+          this.counter--
+          if (this.counter == -1) this.counter= this.img.length -1
+        }
       }
   }
 );
