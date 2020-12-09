@@ -24,6 +24,9 @@
   font-size: 60px;
   color: gray;
 }
+i {
+  cursor: pointer;
+}
 .image_box {
   width: calc(100% - 140px);
 }

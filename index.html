@@ -13,13 +13,13 @@
 <div id="root">
   <div id="container">
     <div class="back_image">
-      <i class="fas fa-chevron-left"></i>
+      <i class="fas fa-chevron-left" @click="preImg"></i>
     </div>
     <div class="image_box">
-      <img :src="img[position]" alt="Razza lupi">
+      <img :src="img[counter]" alt="Razza lupi">
     </div>
     <div class="next_image">
-      <i class="fas fa-chevron-right"></i>
+      <i class="fas fa-chevron-right" @click="nextImg"></i>
     </div>
   </div>
 </div>
